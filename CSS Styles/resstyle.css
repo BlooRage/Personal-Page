@@ -1,0 +1,267 @@
+/* imports */
+@import url('https://fonts.cdnfonts.com/css/georgia-pro-cond');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/lora');
+@import url('https://fonts.cdnfonts.com/css/baskerville');
+
+* {
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+}
+
+body {
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+}
+
+h1{
+  text-shadow: 0px 0px 50px #ffffff;
+  letter-spacing: 4.5px;
+  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+}
+
+h2, h3 {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #5aa7d5;
+  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  letter-spacing: 3px;
+}
+
+.headerNavigation {
+  color: #fff;
+  background-color: #000033;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 30px 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.headerNavigation a:link, 
+.headerNavigation a:visited,
+.headerNavigation a:focus{
+  color: #fff;
+  text-decoration: none;
+  font-size:1.3em;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.headerNavigation a:hover{
+  background-color: #fff;
+  color: #000033;
+  box-shadow: 2px 2px 10px #000066;
+  font-size: 1.3em;
+}
+
+.headerNavigation a:active{
+  background-color: #fff;
+  color: #000033;
+  box-shadow: 2px 2px 10px #000066;
+  font-size: 1.2em;
+}
+
+#resume-container {
+  background-color: #fff;
+  margin: 30px;
+  border: 10px solid #000033;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;  
+  position: relative;
+}
+
+#left-container {
+  background-color: #000033;
+  margin: 0px;
+  width: 30%;
+  padding: 30px 20px;;
+  text-align: center;
+}
+
+#right-container {
+  margin: 0px;
+  width: 70%; 
+  padding:30px 0px;
+  padding-left: 40px;
+}
+
+#right-container h1{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #000066;
+  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  letter-spacing: 3px;
+  color: #000033;
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+
+#right-container h2{
+  letter-spacing: 2px;
+  color: #000033;
+  text-decoration: none;
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+  margin-top: 0px;
+  padding: 0px 20px;
+  letter-spacing: 3px;
+}
+
+#ITS{
+  margin-bottom:90px;
+}
+
+.design-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.design-cont {
+  width: 5%;
+  font-size: 2.5em;
+  text-align:center;
+}
+
+.design-text {
+  width: 95%;
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.design-text hr {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.design-text h2 {
+  position: absolute;
+  bottom: -3px;
+  left: -15px;
+  width: 100%;
+}
+
+.about-me, .it-skills {
+  text-align: justify;
+  padding: 15px 70px 0px 30px;
+ 
+}
+
+.work-experience {
+  text-align: left;
+  padding-left: 30px; /* Aligns with other sections */
+  white-space: nowrap;
+}
+
+.work-experience ol, .work-experience ul {
+  padding-left: 50px; /* Ensures lists align properly */
+  margin-bottom: 10px; /* Provides better spacing */
+}
+
+.work-experience li {
+  margin-bottom: 5px; /* Adds small spacing for readability */
+}
+
+.work-experience h4 {
+  margin-bottom: 5px; /* Ensures proper spacing below headings */
+}
+
+.container-education {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 30px;
+  text-align: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.education-cont{
+  font-size:1em;
+  padding: 0 15px;
+  width: 26.8%;
+  margin-bottom: 60px;
+}
+.work-experience {
+  position: relative;
+  padding: 0 20px;
+  width: 26.5%;
+  margin-bottom: 60px;
+  font-size: 1.2em;
+}
+.it-skills {
+  position: relative;
+  padding: 0 20px;
+  width: 26.5%;
+  margin-bottom: 0px;
+  font-size: 1.2em;
+}
+
+.education-cont h3 {
+  font-family: 'Poppins', 'Tahoma', 'Avenir', sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.loc {
+  margin-top: 0;
+}
+
+
+.profile {
+  width: 80%;
+  height: auto;
+  margin: 50px auto 0;
+  border-radius: 900px;
+  border: 8px double white;
+}
+
+.contact, .skills, .hobbies, .character-reference {
+  margin-top: 70px;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+#left-container h2 {
+  text-decoration:none;
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+
+
+#left-container li, #left-container p {
+  margin-left: 10px;
+  color: white;
+  text-align: left;
+  font-size: 1em;
+}
+
+.character-reference {
+  text-align: left;
+}
+
+.character-reference h2 {
+  font-size: 1.5em;
+}
+
+.characterdeets {
+  text-align: left;
+  font-size: 1em;
+  margin: 0;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 80%;
+  line-height: 5px;
+}
