@@ -168,3 +168,7 @@ h2, h3 {
   align-items: center;  /* Centers items vertically */
   justify-content: center;  /* Centers items horizontally */
 }
+
+.media-intro video {
+  border: 5px solid #000066;
+}
