@@ -14,13 +14,18 @@ body {
 }
 
 h1 {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #5aa7d5;
   font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  letter-spacing: 3px;
 }
 
 h2, h3 {
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 2px;
   text-decoration-color: #5aa7d5;
   font-family: 'georgia pro cond', 'lora', 'Baskerville';
   letter-spacing: 3px;
@@ -62,4 +67,212 @@ h2, h3 {
   color: #000033;
   box-shadow: 2px 2px 10px #000066;
   font-size: 1.2em;
+}
+
+.ex-nav {
+  margin:20px 50px;
+}
+
+.exhibit-navigation {
+    display:flex;
+    position:relative;
+    margin:10px 50px;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-exhibit{
+    padding:10px;
+    margin: 5px 15px;
+    background-color: #000033;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-exhibit:link, .btn-exhibit:visited, .btn-exhibit:focus{
+  padding:10px;
+  margin: 5px 15px;
+  background-color: #000033;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #000033;
+}
+
+.btn-exhibit:hover{
+  padding:10px;
+  margin: 5px 15px;
+  background-color: #fff;
+  color:#000033;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #000033;
+}
+
+.btn-exhibit:active{
+  transform: scale(.9);
+  order: 1px solid #000033;
+}
+
+#btn-top {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 25px 20px; /* Ensures uniform padding */
+  background: #00004d; /* Optional: Adds visibility */
+  border-radius: 5px; /* Smooth corners */
+  font-size: 1em;
+}
+
+#btn-top:link, 
+#btn-top:visited, 
+#btn-top:focus {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: #00004d;
+  border-radius: 5px;
+}
+
+#btn-top:hover {
+  background: #415a77;
+}
+
+#btn-top:active {
+  background: #000033;
+  transform: scale(.9);
+}
+
+.btn-music{
+  padding:10px 20px;
+  margin: 0px 15px;
+  background-color: #ffffff;
+  color:#000033;
+  text-decoration: none;
+  border: 1px solid #000033;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-music:link, .btn-music:visited, .btn-music:focus{
+  background-color: #ffffff;
+  color:#000033;
+  text-decoration: none;
+  border: 1px solid #000033;
+  border-radius: 5px;
+}
+
+.btn-music:hover{
+  background-color: #000033;
+  color:#fff;
+  border: 1px solid #000033;
+  border-radius: 5px;
+}
+
+.btn-music:active{
+  transform: scale(.9);
+}
+
+.header-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#travel{
+  margin-top: 80px;
+}
+
+.page-paragraph {
+  text-align: justify;
+  margin: 10px 65px 0px;
+  padding: 0px 5% 5px;
+}
+
+.list-container {
+  border: 3px solid #000033;
+  border-radius: 10px;
+  margin: 10px 65px;
+  text-align: justify;
+  display: flex;
+  position: relative;
+}
+
+
+.left-container {
+  background-color: #000033;
+  width: 30%;
+  height: auto;
+  padding: 10px;
+  color: white;
+  font-size: 1em;
+}
+
+.right-container {
+  padding: 25 15 15 20px;
+  width: 70%;
+}
+
+.bullet-cont {
+  display: flex;
+  position: relative;
+
+}
+
+.cont-list {
+  margin: -5 15 15 10px;
+  width: 50%;
+  height: auto;
+  text-align: left;
+}
+
+.gen-title {
+  text-align: left;
+}
+
+.left-list {
+  margin: 20 45 15 20;
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+.text-left-container {
+  width:52%;
+  height: auto;
+  padding: 15px 40px 10px 25px;
+  text-align: center;
+  margin: 0px;
+}
+
+.text-left-container ul {
+  text-align: justify;
+}
+
+.img-right-container {
+  width: 48%;
+  height: auto;
+  padding: 10px;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+.img-right-container img{
+  border: 5px solid #00004d;
+  border-radius: 10px;
+}
+
+.img-right-container map:hover {
+  opacity: .4;
 }

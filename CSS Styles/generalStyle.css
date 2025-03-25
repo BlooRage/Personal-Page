@@ -130,7 +130,7 @@ h2, h3 {
 
 .paragraph{
   border: 3px solid #003;
-  margin: 20px 0px;
+  margin: 20px 65px;
   border-radius: 10px;
   text-align:justify;
   padding-bottom: 15px;
@@ -164,63 +164,58 @@ h2, h3 {
 
 .images a:hover {
   cursor: pointer;
+  opacity: 0.8;
   transform: scale(1.1);
 }
 
-.top a{
+.images a:active {
+  transform: scale(.9);
+}
+
+#btn-top {
   color: white;
+  display: block;
   text-decoration: none;
   font-weight: bold;
   position: fixed;
-  bottom: 28px;
-  right: 42px;
-  padding: 15px 20px;
+  bottom: 10px;
+  right: 10px;
+  padding: 15px 20px; /* Ensures uniform padding */
   background: #00004d; /* Optional: Adds visibility */
-  border-radius: 5px; /* Optional: Smooth corners */
+  border-radius: 5px; /* Smooth corners */
 }
 
-.top a:link, .top a:visited, .top a:focus{
+#btn-top:link, 
+#btn-top:visited, 
+#btn-top:focus {
   color: white;
-text-decoration: none;
-font-weight: bold;
-position: fixed;
-bottom: 28px;
-right: 42px;
-padding: 15px 20px;
-background: #00004d; /* Optional: Adds visibility */
-border-radius: 5px; /* Optional: Smooth corners */
+  text-decoration: none;
+  font-weight: bold;
+  background: #00004d;
+  border-radius: 5px;
 }
 
-.top a:hover{
-color: white;
-text-decoration: none;
-font-weight: bold;
-position: fixed;
-bottom: 28px;
-right: 42px;
-padding: 15px 20px;
-background: #415a77; /* Optional: Adds visibility */
-border-radius: 5px; /* Optional: Smooth corners */
+#btn-top:hover {
+  background: #415a77;
 }
 
-.top a:active{
-  color: white;
-  font-size: .9em;
-  background: #000033; /* Optional: Adds visibility */
-  }
+#btn-top:active {
+  background: #000033;
+  transform: scale(0.9);
+}
 
 
-  .header-title {
+.header-title {
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically *//* Ensures full width */
     color: #000033;
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 8.5px;
     text-decoration-thickness: 5px;
     text-decoration-color: #5aa7d5;
     margin: 20px auto 0px;
-  }
+}
 
   .fas, .far, .fal, .fab, .fa {
     margin: 0;

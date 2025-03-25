@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
 }
 
 h2, h3 {
@@ -22,7 +22,7 @@ h2, h3 {
   text-underline-offset: 8px;
   text-decoration-thickness: 5px;
   text-decoration-color: #5aa7d5;
-  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
   letter-spacing: 3px;
 }
 

@@ -16,7 +16,7 @@ body {
 h1{
   text-shadow: 0px 0px 50px #ffffff;
   letter-spacing: 4.5px;
-  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
 }
 
 h2, h3 {
@@ -24,7 +24,7 @@ h2, h3 {
   text-underline-offset: 8px;
   text-decoration-thickness: 5px;
   text-decoration-color: #5aa7d5;
-  font-family: 'georgia pro cond', 'lora', 'Baskerville';
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
   letter-spacing: 3px;
 }
 
@@ -67,8 +67,8 @@ h2, h3 {
 
 #resume-container {
   background-color: #fff;
-  margin: 30px;
-  border: 10px solid #000033;
+  margin: 30px 60px;
+  border: 7px solid #000033;
   border-radius: 10px;
   padding: 0px;
   display: flex;  
@@ -231,6 +231,14 @@ h2, h3 {
   font-size: 1.1em;
 }
 
+.contact i{
+  margin-top: 30px;
+  color: white;
+  text-align: left;
+  font-size: 1em;
+  margin: 1px -20px;
+}
+
 
 #left-container h2 {
   text-decoration:none;
@@ -250,6 +258,7 @@ h2, h3 {
 
 .character-reference {
   text-align: left;
+  margin:0px;
 }
 
 .character-reference h2 {
@@ -267,32 +276,38 @@ h2, h3 {
   line-height: 5px;
 }
 
-.top a:link, .top a:visited, .top a:focus{
+#btn-top {
   color: white;
-text-decoration: none;
-font-weight: bold;
-position: fixed;
-bottom: 30px;
-right: 53px;
-padding: 15px 20px;
-background: #00004d; /* Optional: Adds visibility */
-border-radius: 5px; /* Optional: Smooth corners */
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 15px 20px; /* Ensures uniform padding */
+  background: #00004d; /* Optional: Adds visibility */
+  border-radius: 5px; /* Smooth corners */
 }
 
-.top a:hover{
-color: white;
-text-decoration: none;
-font-weight: bold;
-position: fixed;
-bottom: 30px;
-right: 53px;
-padding: 15px 20px;
-background: #415a77; /* Optional: Adds visibility */
-border-radius: 5px; /* Optional: Smooth corners */
+#btn-top:link, 
+#btn-top:visited, 
+#btn-top:focus {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: #00004d;
+  border-radius: 5px;
 }
 
-.top a:active{
-  color: white;
-  font-size: .9em;
-  background: #000033; /* Optional: Adds visibility */
-  }
+#btn-top:hover {
+  background: #415a77;
+}
+
+#btn-top:active {
+  background: #000033;
+  transform: scale(0.9);
+}
+
+.design-cont i {
+  margin-left: -20px;
+}
