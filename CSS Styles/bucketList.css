@@ -276,3 +276,11 @@ h2, h3 {
 .img-right-container map:hover {
   opacity: .4;
 }
+
+.image-map {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #000066;
+  border-radius: 5px;
+}

@@ -152,7 +152,13 @@ h2, h3 {
 
 .header-title {
   text-align: center;
-  margin: 40px 0px 10px;
+  margin: 10px 0px 10px;
+}
+
+.header-title h2 {
+  text-decoration-thickness: 2px;
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+  padding: 0px 25px 0px 11%;
 }
 
 .header-title h1{
@@ -161,164 +167,53 @@ h2, h3 {
   text-decoration-thickness: 5px;
   text-decoration-color: #5aa7d5;
   font-family: 'georgia pro cond', 'lora', 'Baskerville';
-  letter-spacing: 3px;
+  letter-spacing: 3px;;
 }
 
 .page-paragraph {
   text-align: justify;
   margin: 10px 65px 0px;
-  padding: 0px 15% 5px;
+  padding: 0px 6% 5px;
 }
 
-.genre-cont {
+.container {
   border: 3px solid #000033;
   border-radius: 10px;
-  text-align: center;
-  padding: 10 30 10px;
-  margin:10px 65px 0px;
+  margin: 10px 65px;
 }
 
-.music-cont-layout {
+.images {
   display: flex;
-  position:relative;
-  
-}
-
-.music-cont {
-  border: 3px solid #000066;
-  border-radius: 8px;
-  margin: 10px 20;
-  width: 20%;
-  padding-top: 10px;
-  color:white;
-  background-color: #000066;
-}
-
-.music-cont p {
-  line-height: 2px;
-}
-
-.music-cont img {
-  width: 90%;
-  height: auto;
-  border-radius: 5px;
-}
-
-
-.music-cont a {
-  width: 90%;
-  height: auto; 
-}
-
-.audio-player {
-  width: 90%;
-  height: 40px;
-  margin-top: 15px;
-}
-
-
-.music-cont {
-  display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  text-align: center; /* Ensures inline elements inside are centered */
-  flex-direction: column; /* Ensures elements stack vertically */
-}
-
-.music-cont p {
-  line-height: normal;
-}
- 
-.music-cont img {
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing */
   width: 100%;
-  height: auto;
-  padding-bottom: 0px;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  padding: 0;
+  justify-content: center;
+}
+
+.images a {
+  display: flex; /* Makes the entire anchor clickable */
+  width: 250px; 
+  height: 250px; /* Matches image height */
+  border: 2px solid #000033;
   border-radius: 5px;
-  left: 50%;
-  right: 50%;
+  overflow: hidden; /* Prevents extra space issues */
+  transform: 0.3s ease-in-out;
 }
 
-.music-orig {
-  display: inline;
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures it fills the anchor without distortion */
+  transform: transform 0.3s ease-in-out;
 }
 
-.music-hover {
-  display: none;
-}
-
-.music-cont a{
-  display: block;
-  width: 90%;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Hover: Make the image slightly bigger */
-.music-cont a:hover{
+.images a:hover {
+  cursor: pointer;
+  opacity: 0.8;
   transform: scale(1.1);
 }
 
-/* Clicked (Active): Make the image slightly smaller */
-.music-cont a:active{
-  transform: scale(0.9);
-}
-
-/* Hide original and show hover image on hover */
-.music-cont a:hover .music-orig  {
-  display: none;
-}
-
-.music-cont a:hover .music-hover {
-  display: inline;
-}
-
-
-.music-nav {
-  margin:20px;
-}
-
-.music-navigation {
-    display:flex;
-    position:relative;
-    margin:10px 70px;
-    padding:10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-music{
-  padding:10px 20px;
-  margin: 0px 15px;
-  background-color: #ffffff;
-  color:#000033;
-  text-decoration: none;
-  border: 1px solid #000033;
-  border-radius: 5px;
-  text-align: center;
-  align-items: center;
-}
-
-.btn-music:link, .btn-music:visited, .btn-music:focus{
-  background-color: #ffffff;
-  color:#000033;
-  text-decoration: none;
-  border: 1px solid #000033;
-  border-radius: 5px;
-}
-
-.btn-music:hover{
-  background-color: #000033;
-  color:#fff;
-  border: 1px solid #000033;
-  border-radius: 5px;
-}
-
-.btn-music:active{
+.images a:active {
   transform: scale(.9);
-}
-
-.genre-intro {
-  margin: 10px;
-  padding: 0px 10%;
-  text-align: justify;
 }
