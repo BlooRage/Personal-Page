@@ -1,0 +1,304 @@
+/* imports */
+@import url('https://fonts.cdnfonts.com/css/georgia-pro-cond');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/lora');
+@import url('https://fonts.cdnfonts.com/css/baskerville');
+
+* {
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+}
+
+body {
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+}
+
+h1 {
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
+}
+
+h2, h3 {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #5aa7d5;
+  font-family:  'lora', 'georgia pro cond', 'Baskerville';
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-family:'Poppins', 'Tahoma', 'Avenir';
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+h4 {
+  font-family: 'Poppins', 'Tahoma', 'Avenir';
+  text-align: center;
+}
+
+.headerNavigation {
+  color: #fff;
+  background: #000033;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 30px 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.headerNavigation a:link, 
+.headerNavigation a:visited,
+.headerNavigation a:focus{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:1.3em;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.headerNavigation a:hover{
+  background-color: #fff;
+  color: #000033;
+  box-shadow: 2px 2px 10px #000066;
+  font-size: 1.3em;
+}
+
+.headerNavigation a:active{
+  background-color: #fff;
+  color: #000033;
+  box-shadow: 2px 2px 10px #000066;
+  font-size: 1.2em;
+}
+
+.ex-nav {
+  margin:20px 50px;
+}
+
+.exhibit-navigation {
+    display:flex;
+    position:relative;
+    margin:10px 50px;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-exhibit{
+    padding:10px;
+    margin: 5px 15px;
+    background-color: #000033;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-exhibit:link, .btn-exhibit:visited, .btn-exhibit:focus{
+  padding:10px;
+  margin: 5px 15px;
+  background-color: #000033;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #000033;
+}
+
+.btn-exhibit:hover{
+  padding:10px;
+  margin: 5px 15px;
+  background-color: #fff;
+  color:#000033;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #000033;
+}
+
+.btn-exhibit:active{
+  transform: scale(.9);
+  order: 1px solid #000033;
+}
+
+#btn-top {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 25px 20px; /* Ensures uniform padding */
+  background: #00004d; /* Optional: Adds visibility */
+  border-radius: 5px; /* Smooth corners */
+  font-size: 1em;
+}
+
+#btn-top:link, 
+#btn-top:visited, 
+#btn-top:focus {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: #00004d;
+  border-radius: 5px;
+}
+
+#btn-top:hover {
+  background: #415a77;
+}
+
+#btn-top:active {
+  background: #000033;
+  transform: scale(.9);
+}
+
+.header-title {
+  text-align: center;
+  margin: 40px 0px 10px;
+}
+
+.header-title h1{
+  text-decoration: underline;
+  text-underline-offset: 8.5px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #5aa7d5;
+  letter-spacing: 3px;
+}
+
+.page-paragraph {
+  text-align: justify;
+  margin: 10 65 0px;
+  padding: 10px 10% 5px;
+}
+
+
+.poster-line {
+  margin: 10 65px; 
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 4% 60px;
+}
+
+.film-title {
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 2px;
+  opacity: 0;
+  font-size: .7em;
+}
+
+.img-poster {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.film-item {
+  display: flex;
+  flex-direction: column; /* Ensures the image and title stack properly */
+  align-items: center;
+  text-align: center;
+  width: 10%; /* Fixed width */
+  height: 190px; /* Fixed height */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.film-item:hover {
+  background-color: #fff;
+  outline: 3px solid #000033; /* Use outline instead of border */
+  transform: scale(1.2);
+}
+
+/* Show Title on Hover */
+.film-item:hover .film-title {
+  opacity: 1;
+}
+
+
+.films-review-cont {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin: 0 65px 30px; /* Fixed margin syntax */
+}
+.film-cont-left, .film-cont-right {
+  display: block;
+  border: 3px solid #000033;
+  border-radius: 5px;
+  width:49%;
+}
+
+#hr-vid {
+  border: none; /* Remove default HR border */
+  border-top: 2px solid #000033; /* Custom border */
+  width: 80%;
+  position: relative;
+  top: -20px; /* Moves it up */
+}
+
+.film-cont-left{
+  margin-right: 30px;
+}
+
+.film-cont {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-poster {
+  width: 40%;
+  display: flex;
+  height: auto;
+}
+
+
+
+.film-poster img{
+  width: 92%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.film-poster a{
+  margin:5px;
+}
+
+.film-poster a:hover {
+  transform: scale(1.1);
+  opacity: .7;
+}
+.film-text {
+  width: 60%;
+  display: block;
+  padding: 0 15 0 5px;
+  height: auto;
+  text-align: justify;
+  line-height: normal;
+  font-size: .9em;
+}
+
+.film-video {
+  display: flex; /* Enables flex properties */
+  justify-content: center; /* Centers content horizontally */
+  position: relative; /* Allows top positioning */
+  top: -40px; /* Moves the element up */
+}
+
+.film-video video {
+  border-radius: 5px;
+}
+
